@@ -1,0 +1,410 @@
+/* =====================================================
+   PROPERTIES SECTION
+===================================================== */
+
+.properties-section {
+  width: 100%;
+
+  padding: 120px 30px;
+
+  background: #ffffff;
+
+  color: #151515;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.properties-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.properties-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 55px;
+}
+
+.properties-label {
+  display: inline-block;
+
+  margin-bottom: 17px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #a28318;
+}
+
+.properties-heading h2 {
+  margin: 0;
+
+  font-size: clamp(38px, 5vw, 62px);
+
+  line-height: 1.05;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+}
+
+.properties-heading h2 span {
+  display: block;
+
+  color: #a28318;
+}
+
+.properties-heading > p {
+  max-width: 350px;
+
+  margin: 0 0 5px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #6b6b6b;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.properties-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 45px 25px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.property-card {
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.property-image-wrapper {
+  position: relative;
+
+  height: 390px;
+
+  overflow: hidden;
+}
+
+.property-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.property-card:hover .property-image {
+  transform: scale(1.04);
+}
+
+
+/* =====================================================
+   PROPERTY TYPE
+===================================================== */
+
+.property-type {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  padding: 8px 11px;
+
+  background: #151515;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   ARROW
+===================================================== */
+
+.property-arrow {
+  position: absolute;
+
+  right: 18px;
+  bottom: 18px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: #c9a227;
+
+  color: #111111;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.property-arrow:hover {
+  transform: rotate(45deg);
+
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.property-content {
+  padding: 25px;
+}
+
+.property-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 22px;
+
+  font-weight: 600;
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 25px;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.property-location svg {
+  color: #a28318;
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.property-bottom {
+  padding-top: 20px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.property-bottom > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.property-details {
+  font-size: 12px;
+
+  color: #888888;
+}
+
+.property-bottom strong {
+  font-size: 17px;
+
+  font-weight: 700;
+
+  color: #151515;
+}
+
+.property-bottom a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #151515;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: color 0.3s ease;
+}
+
+.property-bottom a:hover {
+  color: #a28318;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.properties-cta {
+  margin-top: 65px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid #dddddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.properties-cta p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #666666;
+}
+
+.properties-cta a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px 18px;
+
+  background: #151515;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.properties-cta a:hover {
+  background: #a28318;
+
+  color: #111111;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+  .properties-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .properties-heading > p {
+    max-width: 600px;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .properties-section {
+    padding: 85px 20px;
+  }
+
+  .properties-heading h2 {
+    font-size: 40px;
+  }
+
+  .property-image-wrapper {
+    height: 320px;
+  }
+
+  .property-content {
+    padding: 20px;
+  }
+
+  .property-content h3 {
+    font-size: 20px;
+  }
+
+  .property-bottom {
+    align-items: flex-start;
+  }
+
+  .properties-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+}

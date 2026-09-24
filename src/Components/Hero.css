@@ -1,0 +1,283 @@
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    url("../../public/Images/obi.png")
+    center / cover no-repeat;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.9) 0%,
+      rgba(8, 8, 8, 0.65) 45%,
+      rgba(8, 8, 8, 0.25) 100%
+    );
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1250px;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  padding: 150px 30px 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #d5b43c;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(50px, 7vw, 88px);
+
+  line-height: 0.98;
+
+  font-weight: 600;
+
+  letter-spacing: -3px;
+}
+
+.hero-content h1 span {
+  display: block;
+
+  color: #d5b43c;
+}
+
+.hero-content p {
+  max-width: 590px;
+
+  margin: 30px 0;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #dedede;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 15px 21px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.hero-primary-btn {
+  background: #d5b43c;
+  color: #111111;
+}
+
+.hero-primary-btn:hover {
+  background: #e6c957;
+
+  transform: translateY(-2px);
+}
+
+.hero-secondary-btn {
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero-secondary-btn:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* =====================================================
+   BOTTOM OPTIONS
+===================================================== */
+
+.hero-bottom {
+  position: absolute;
+
+  left: 30px;
+  right: 30px;
+  bottom: 45px;
+
+  display: flex;
+
+  gap: 55px;
+}
+
+.hero-bottom div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.hero-bottom strong {
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  color: #d5b43c;
+}
+
+.hero-bottom span {
+  font-size: 12px;
+
+  color: #c9c9c9;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+  .hero-content h1 {
+    font-size: 58px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-bottom {
+    gap: 30px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: 780px;
+  }
+
+  .hero-container {
+    min-height: 780px;
+
+    padding: 130px 20px 170px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+
+    margin: 24px 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    max-width: 290px;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    justify-content: center;
+  }
+
+  .hero-bottom {
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+
+    gap: 18px;
+
+    justify-content: space-between;
+  }
+
+  .hero-bottom div {
+    gap: 4px;
+  }
+
+  .hero-bottom span {
+    font-size: 10px;
+  }
+}
